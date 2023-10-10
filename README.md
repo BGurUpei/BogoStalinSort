@@ -11,5 +11,30 @@ so I created BogoStalin sort.
 Essentially works like bogo sort, but before it shuffles it eliminates the first index of the item that breaks the ascending order
 Can only sort in ascending order
 
+technical details:
+complexity : yes
+best case : O(n)
+
+
+Last but not least, example run of the sorting method (printing between steps with commentary)
+
+Original List: [24, 30, 42, 78, 75, 76, 32, 35, 19, 65]
+BogoStalin sort Begin
+[24, 30, 42, 78, 76, 32, 35, 19, 65]-- Stalined the number 75
+[35, 32, 30, 24, 65, 78, 42, 19, 76]-- BoGo-ed (shuffle)
+[35, 30, 24, 65, 78, 42, 19, 76]-- Stalined the number 32
+[24, 42, 19, 65, 35, 76, 78, 30]-- BoGo-ed (shuffle)
+[24, 42, 65, 35, 76, 78, 30]-- Stalined the number 19
+[24, 78, 30, 42, 65, 35, 76]-- BoGo-ed (shuffle)
+[24, 78, 42, 65, 35, 76]-- Stalined the number 30
+[42, 24, 65, 76, 35, 78]-- BoGo-ed (shuffle)
+[42, 65, 76, 35, 78]-- Stalined the number 24
+[76, 42, 65, 78, 35]-- BoGo-ed (shuffle)
+[76, 65, 78, 35]-- Stalined the number 42
+[65, 76, 78, 35]-- BoGo-ed (shuffle)
+[65, 76, 78]-- Stalined the number 35
+end of BogoStalin sort
+Sorted List: [65, 76, 78]
+
 
 Inspired after watching this video: https://youtu.be/ktgxMtWMflU?si=rOufqgjW2t0o80ZZ
