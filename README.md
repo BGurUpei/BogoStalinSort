@@ -37,4 +37,5 @@ end of BogoStalin sort
 Sorted List: [65, 76, 78]
 ```
 
+**Feel free to fork or report any issues**
 Inspired after watching this video: https://youtu.be/ktgxMtWMflU?si=rOufqgjW2t0o80ZZ
